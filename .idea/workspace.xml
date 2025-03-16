@@ -36,27 +36,27 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-    &quot;lastFilter&quot;: {
+  &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
     &quot;assignee&quot;: &quot;Fyriia&quot;
-    }
-    }</component>
+  }
+}</component>
   <component name="GithubPullRequestsUISettings">{
-    &quot;selectedUrlAndAccountId&quot;: {
+  &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Die-Spengergasse/sj24-25-6akif-wmc-Fyriia.git&quot;,
     &quot;accountId&quot;: &quot;74119f01-a85c-44fe-b323-c2dc686310e2&quot;
-    }
-    }</component>
+  }
+}</component>
   <component name="ProjectColorInfo">{
-    &quot;associatedIndex&quot;: 8
-    }</component>
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2t1l9MXoyYFkup59dt7aztunaLi" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
-    &quot;keyToString&quot;: {
+  &quot;keyToString&quot;: {
     &quot;JavaScript Debug.delete react debug.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;exercise/02__state__reducer&quot;,
@@ -72,8 +72,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\WMC_NEW\\Delete2\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-    }
-    }</component>
+  }
+}</component>
   <component name="RunManager">
     <configuration name="delete react debug" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
