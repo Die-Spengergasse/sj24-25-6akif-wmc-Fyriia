@@ -6,14 +6,18 @@ import styles from "./CategoryAdd.module.css"
 import { Dispatch, FormEvent, RefObject, SetStateAction, useEffect, useRef, useState } from "react";
 
 
-async function handleSubmit(event: FormEvent, setError: Dispatch<SetStateAction<ErrorResponse>>,
-    formRef: RefObject<HTMLFormElement>) {
+async function handleSubmit(
+    event: FormEvent,
+    setError: Dispatch<SetStateAction<ErrorResponse>>,
+    formRef: RefObject<HTMLFormElement | null>
+) {
     event.preventDefault();
+    if (!formRef.current) return; // Ensure formRef is not null
     const response = await addCategory(new FormData(event.target as HTMLFormElement));
     if (isErrorResponse(response))
         setError(response);
     else
-        formRef.current?.reset();
+        formRef.current.reset();
 }
 
 

@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { TodoItem } from "../types/TodoItem";
 import { Category } from "../types/Category";
+import TodosDelete from "./TodosDelete";
 import styles from "./style.module.css";
 
 type Props = {
@@ -12,14 +13,16 @@ type Props = {
 
 export default function TodosClient({ todoItems, categories }: Props) {
     const [selectedCategory, setSelectedCategory] = useState<string>("");
+    const [todoToDelete, setTodoToDelete] = useState<TodoItem | null>(null);
+    const [items, setItems] = useState<TodoItem[]>(todoItems);
 
     const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedCategory(event.target.value);
     };
 
     const filteredTodoItems = selectedCategory
-        ? todoItems.filter(item => item.categoryName === selectedCategory)
-        : todoItems;
+        ? items.filter(item => item.categoryName === selectedCategory)
+        : items;
 
     return (
         <div className={styles.categories}>
@@ -43,12 +46,27 @@ export default function TodosClient({ todoItems, categories }: Props) {
                     >
                         <h2>{item.title}</h2>
                         <p>{item.description}</p>
-                        <p>Kategorie: {item.categoryName} (GUID {item.categoryGuid})</p>
+                        <p>Kategorie: {item.categoryName}</p>
                         <p>Fällig am: {new Date(item.dueDate).toLocaleDateString()}</p>
                         <p>Status: {item.isCompleted ? "Abgeschlossen" : "Ausstehend"}</p>
+                        <button onClick={() => setTodoToDelete(item)}>Delete</button>
                     </li>
                 ))}
             </ul>
+
+            {todoToDelete && (
+                <TodosDelete
+                    todo={todoToDelete}
+                    onCancel={() => setTodoToDelete(null)}
+                    onDeleted={() => {
+                        // Remove the deleted item from local state and clear the deletion modal
+                        setItems(prevItems =>
+                            prevItems.filter(item => item.guid !== todoToDelete.guid)
+                        );
+                        setTodoToDelete(null);
+                    }}
+                />
+            )}
         </div>
     );
 }

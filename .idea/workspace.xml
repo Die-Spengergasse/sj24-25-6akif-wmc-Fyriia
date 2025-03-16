@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="200d4a28-2c62-493a-bacb-2fd85b4e3550" name="Changes" comment="exercise01" />
+    <list default="true" id="200d4a28-2c62-493a-bacb-2fd85b4e3550" name="Changes" comment="feat: load exercise 2">
+      <change afterPath="$PROJECT_DIR$/Delete2/src/app/categories/[guid]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Delete2/src/app/todos/TodosDelete.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delete2/src/app/categories/CategoryAdd.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Delete2/src/app/categories/CategoryAdd.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delete2/src/app/categories/CategoryDelete.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Delete2/src/app/categories/CategoryDelete.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delete2/src/app/todos/TodosClient.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Delete2/src/app/todos/TodosClient.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delete2/src/app/types/TodoItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Delete2/src/app/types/TodoItem.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="exercise/01_movie_details" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,21 +55,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/wmc56AKIF",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\XboxGames\\WMCSOMMER25\\moviesearch20250221\\moviesearch\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.delete react debug.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;exercise/02__state__reducer&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wmc56AKIF&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\WMC_NEW\\Delete2\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="delete react debug" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,6 +97,10 @@
       <workItem from="1739527309845" duration="3112000" />
       <workItem from="1740136736879" duration="186000" />
       <workItem from="1740136937681" duration="7149000" />
+      <workItem from="1742124720686" duration="1540000" />
+      <workItem from="1742129449737" duration="706000" />
+      <workItem from="1742130166766" duration="3287000" />
+      <workItem from="1742135079804" duration="2757000" />
     </task>
     <task id="LOCAL-00001" summary="readme adjusted">
       <option name="closed" value="true" />
@@ -112,7 +134,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740148296807</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chore: adjust README.md">
+      <option name="closed" value="true" />
+      <created>1742124785785</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742124785785</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: adjust README.md">
+      <option name="closed" value="true" />
+      <created>1742124810995</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742124810996</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: load exercise 2">
+      <option name="closed" value="true" />
+      <created>1742124969809</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742124969809</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +178,54 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="readme adjusted" />
     <MESSAGE value="exercise01" />
-    <option name="LAST_COMMIT_MESSAGE" value="exercise01" />
+    <MESSAGE value="chore: adjust README.md" />
+    <MESSAGE value="feat: load exercise 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: load exercise 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Delete2/src/app/categories/categoryApiClient.ts</url>
+          <line>70</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Delete2/src/app/categories/categoryApiClient.ts</url>
+          <line>71</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Delete2/src/app/categories/categoryApiClient.ts</url>
+          <line>72</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Delete2/src/app/categories/categoryApiClient.ts</url>
+          <line>73</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Delete2/src/app/categories/categoryApiClient.ts</url>
+          <line>74</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Delete2/src/app/categories/categoryApiClient.ts</url>
+          <line>76</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Delete2/src/app/categories/categoryApiClient.ts</url>
+          <line>75</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Delete2/src/app/categories/categoryApiClient.ts</url>
+          <line>77</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
