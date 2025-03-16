@@ -2,5 +2,3 @@
 
 Name: Karoline Bartsch
 Klasse: 6AKIF
-
-readme adjusted
