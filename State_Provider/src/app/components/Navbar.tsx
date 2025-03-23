@@ -3,10 +3,16 @@
 import styles from './Navbar.module.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useTodoAppState } from '@/app/context/TodoAppContext'
+import {TodoAppContext, useTodoAppState} from '@/app/context/TodoAppContext'
 
 export default function Navbar() {
     const pathname = usePathname(); // Aktuellen Pfad abrufen
+    const { activeUser, actions: { setActiveUser } } = useTodoAppState();
+
+    const handleLogout = () => {
+        setActiveUser(null);
+    };
+
     return (
         <nav className={styles.nav}>
             <Link
@@ -33,6 +39,14 @@ export default function Navbar() {
             >
                 About
             </Link>
+            {activeUser && activeUser !== '' && (
+                <div className={styles.userInfo}>
+                    <span>Hello, {activeUser}!</span>
+                    <button onClick={handleLogout} className={styles.logoutButton}>
+                        Log out
+                    </button>
+                </div>
+            )}
         </nav>
     );
 }

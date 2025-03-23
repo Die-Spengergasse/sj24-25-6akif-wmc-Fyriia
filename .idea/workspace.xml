@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f51149a-b174-49a7-8af6-03aacbec2608" name="Changes" comment="">
+    <list default="true" id="6f51149a-b174-49a7-8af6-03aacbec2608" name="Changes" comment="stateprovider">
+      <change afterPath="$PROJECT_DIR$/State_Provider/src/app/components/NameInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State_Provider/src/app/categories/CategoryList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/State_Provider/src/app/categories/CategoryList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State_Provider/src/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/State_Provider/src/app/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State_Provider/src/app/context/TodoAppContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/State_Provider/src/app/context/TodoAppContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State_Provider/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/State_Provider/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State_Provider/src/app/todos/TodosClient.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/State_Provider/src/app/todos/TodosClient.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State_Provider/src/app/types/TodoItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/State_Provider/src/app/types/TodoItem.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +57,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\WMC_NEW\\Delete2\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\WMC_NEW\\State_Provider\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\WMC_NEW" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,11 +81,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742737222300</updated>
-      <workItem from="1742737224203" duration="471000" />
+      <workItem from="1742737224203" duration="6690000" />
     </task>
+    <task id="LOCAL-00001" summary="stateprovider">
+      <option name="closed" value="true" />
+      <created>1742737757907</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742737757907</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="stateprovider" />
+    <option name="LAST_COMMIT_MESSAGE" value="stateprovider" />
   </component>
 </project>

@@ -2,6 +2,8 @@ import Navbar from "@/app/components/Navbar";
 import './globals.css'; // Importiere die globale CSS-Datei
 import { TodoAppStateProvider } from "./context/TodoAppContext";
 import ErrorViewer from "./components/ErrorViewer";
+import React from "react";
+import NameInput from "@/app/components/NameInput";
 
 export default function RootLayout({
     children,
@@ -21,6 +23,7 @@ export default function RootLayout({
             </head>
             <body>
                 <TodoAppStateProvider>
+                    <NameInput />
                     <div className="container">
                         <Navbar />
                         <main className="content">{children}</main>

@@ -1,11 +1,12 @@
 "use client";
-import React, { useEffect, useReducer, useRef } from "react";
 import { Category } from "@/app/types/Category";
 import ModalDialog from "@/app/components/ModalDialog";
 import CategoryEdit, { CategoryEditRef } from "./CategoryEdit";
-import styles from "./CategoryList.module.css";
 import CategoryDelete from "./CategoryDelete";
 import { useTodoAppState } from "@/app/context/TodoAppContext"
+import {useEffect, useReducer, useRef} from "react"
+import styles from "./categoryList.module.css"
+
 // Discriminated unions in typescript
 type ReducerAction =
   | { resetState: true }
@@ -14,6 +15,8 @@ type CategoryListState =
   | { dialogType: "" }
   | { dialogType: "error"; error: string }
   | { dialogType: "edit" | "delete"; category: Category };
+
+
 
 function reducer(
   state: CategoryListState,
@@ -50,45 +53,48 @@ export default function CategoryList({ categories }: { categories: Category[] })
     <div className={styles.categories}>
       <ul>
         {categories.map(category => (
-          <li key={category.guid}>
-            <div className={styles.categoryHeader}>
-              <h2>{category.name}</h2>
-              <span
-                className={styles.editIcon}
-                onClick={() => {
-                  dispatcher({ intent: "edit", category: category })
-                }}
-                title="Edit"
-              >
-                ✏️
-              </span>
-              <span
-                className={styles.editIcon}
-                onClick={() => dispatcher({ intent: "delete", category: category })}
-                title="Delete"
-              >
-                🗑️
-              </span>
-            </div>
-            <p>{category.description}</p>
-            <p>Visible: {category.isVisible ? "yes" : "no"}</p>
-          </li>
+            <li key={category.guid}>
+              <div className={styles.categoryHeader}>
+                <h2>{category.name}</h2>
+                {todoAppState.activeUser &&
+                    todoAppState.activeUser !== "Guest" && (
+                        <>
+                    <span
+                        className={styles.editIcon}
+                        onClick={() => dispatcher({intent: "edit", category: category})}
+                        title="Edit"
+                    >
+                      ✏️
+                    </span>
+                          <span
+                              className={styles.editIcon}
+                              onClick={() => dispatcher({intent: "delete", category: category})}
+                              title="Delete"
+                          >
+                      🗑️
+                    </span>
+                        </>
+                    )}
+              </div>
+              <p>{category.description}</p>
+              <p>Visible: {category.isVisible ? "yes" : "no"}</p>
+            </li>
         ))}
       </ul>
 
       {state.dialogType == "edit" && (
-        <ModalDialog title={`Edit ${state.category.name}`}
-          onOk={() => categoryEditRef.current?.startSubmit()}
-          onCancel={() => dispatcher({ resetState: true })}>
-          <CategoryEdit category={state.category}
-            ref={categoryEditRef}
-            onSubmitted={() => dispatcher({ resetState: true })} />
-        </ModalDialog>
+          <ModalDialog title={`Edit ${state.category.name}`}
+                       onOk={() => categoryEditRef.current?.startSubmit()}
+                       onCancel={() => dispatcher({resetState: true})}>
+            <CategoryEdit category={state.category}
+                          ref={categoryEditRef}
+                          onSubmitted={() => dispatcher({resetState: true})}/>
+          </ModalDialog>
       )}
       {state.dialogType == "delete" && (
-        <CategoryDelete category={state.category}
-          onCancel={() => dispatcher({ resetState: true })}
-          onDeleted={() => dispatcher({ resetState: true })} />
+          <CategoryDelete category={state.category}
+                          onCancel={() => dispatcher({resetState: true})}
+                          onDeleted={() => dispatcher({resetState: true})}/>
       )}
     </div>
   );
