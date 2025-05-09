@@ -22,6 +22,15 @@ export default function RootLayout() {
           ),
         }} 
       />
+        <Tabs.Screen
+            name="(todoItems)"
+            options={{
+                title: 'Todo Items',
+                tabBarIcon: ({ color, size }) => (
+                    <Ionicons name="information-circle" color={color} size={size} />
+                ),
+            }}
+        />
     </Tabs>
   );
 }
