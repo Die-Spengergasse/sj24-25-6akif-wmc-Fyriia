@@ -1,0 +1,1 @@
+export const nameRegex = /^[\p{L}\d _/\-]+$/u;

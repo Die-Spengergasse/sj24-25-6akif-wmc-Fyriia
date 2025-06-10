@@ -4,11 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f51149a-b174-49a7-8af6-03aacbec2608" name="Changes" comment="." />
+    <list default="true" id="6f51149a-b174-49a7-8af6-03aacbec2608" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/app/admin/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/app/admin/modules/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/app/admin/topics/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/app/modules/[moduleGuid]/[topicGuid]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/app/modules/[moduleGuid]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/app/modules/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/components/AuthProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/components/ModuleForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/components/NavBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/components/QuestionCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/components/SWRProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/components/TopicForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/features/modules/createModule.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/features/modules/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/features/modules/useModules.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/features/questions/checkAnswers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/features/questions/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/features/questions/useQuestions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/features/topics/createTopic.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/features/topics/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/features/topics/useTopics.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/lib/ApiError.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/lib/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/lib/useIsAdmin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/lib/validators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/driving-exam-client/src/types/next-auth.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2025_4_36_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2025_4_36_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_23_2025_8_50_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_23_2025_8_50_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -28,6 +70,16 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Die-Spengergasse/sj24-25-6akif-wmc-Fyriia.git&quot;,
     &quot;accountId&quot;: &quot;74119f01-a85c-44fe-b323-c2dc686310e2&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;Die-Spengergasse&quot;,
+    &quot;repository&quot;: &quot;sj24-25-6akif-wmc-Fyriia&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -40,8 +92,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Node.js.apiClient.ts.executor": "Run",
+    "Node.js.route.ts.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "exercise/01__movie__details",
+    "git-widget-placeholder": "exercise/driving__exam",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -54,7 +108,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\WMC_NEW" />
+      <recent name="C:\WMC_NEW\driving-exam-client\src\features\modules" />
+      <recent name="C:\WMC_NEW\driving-exam-client\src\components" />
+      <recent name="C:\WMC_NEW\driving-exam-client\src" />
+      <recent name="C:\WMC_NEW\driving-exam-client\src\app\features\modules" />
+      <recent name="C:\WMC_NEW\driving-exam-client\src\app\modules" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -73,6 +131,10 @@
       <option name="presentableId" value="Default" />
       <updated>1742737222300</updated>
       <workItem from="1742737224203" duration="6690000" />
+      <workItem from="1746811525044" duration="8828000" />
+      <workItem from="1747044358132" duration="2324000" />
+      <workItem from="1749217243309" duration="21050000" />
+      <workItem from="1749380514412" duration="11221000" />
     </task>
     <task id="LOCAL-00001" summary="stateprovider">
       <option name="closed" value="true" />
@@ -90,11 +152,38 @@
       <option name="project" value="LOCAL" />
       <updated>1742817773535</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <option name="closed" value="true" />
+      <created>1746445286322</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746445286322</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".">
+      <option name="closed" value="true" />
+      <created>1746829552873</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746829552873</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="stateprovider" />
